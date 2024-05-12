@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html><head>
+	<title>input tag</title>
+	<STYLE>
+		LABEL
+		{
+			font-size: 25PX;
+			color: RED;
+			border-style: dashed;
+		}
+	</STYLE>
+</head>
+<body bgcolor="POWDERBLUE">
+	<fieldset>
+		<legend> INPUT TAGS</legend>
+	<label> name:</label>
+	<!-- readonly cannot changed only read-->
+    <input type="text" name="name" id="name" minlength="5" maxlength="10" value="" readonly><br><BR>
+	<label>NAME:</label>
+	<input type="text" name="name" id="name" minlength="5" maxlength="10" value="VIGNESH"><br><BR>
+	<label>NAME:</label>
+	<input type="text" name="name" id="name" minlength="5" maxlength="10" placeholder="ENTER THE NAME"><br><BR>
+	<label>PASSWORD:</label>
+	<input type="PASSWORD" name="pwd" inputmode="numeric" required><br><BR>
+	<label>PASSWORD:</label>
+	<input type="PASSWORD" name="pwd" pattern="[0-9a-zA-Z]{4,6}"required><br><BR>
+	<label FOR="email">EMAIL</label>
+	<input type="email" name="mail"id="mail"><BR><BR>
+	<!-- ONLY multiple mail in single tag-->
+	EMAIL:<input type="email" name="mail"id="mail" multiple><BR><BR>
+	<label>BUTTON:</label>
+	<input type="BUTTON" value="signin"><br><br>
+	<label>submitbutton:</label>
+	<input type="submit" value="submit"><BR><br>
+	<label>resetbutton:</label>
+	<input type="reset"  value="reset"><br><br>
+	<fieldset style="width: 300px;">
+		<legend> select the area of interest</legend>
+		<div>
+			<input type="checkbox" name="interest" value="coding" checked>
+			<label for="coding">coding</label>
+		</div>
+		<div>
+			<input type="checkbox" name="interest" value="music">
+			<label for="coding">music</label>
+		</div>
+	</fieldset>
+	<br>
+	<br>
+	<br>
+	<p> CHOOSE YOUR FAVORITE COLOR</p>
+	<DIV>
+		<label FOR="color"></label>
+		<input type="color" name="color" id="color" value="">
+	</DIV>
+	<br>
+	<br>
+	<DIV>
+		<label FOR="color"></label>
+		<input type="color" name="color" id="color" value="#f6b73C">
+	</DIV>
+	<label>DATE:</label>
+	<input type="DATE" name="DATE" value="2018-07-22" MIN="2018-01-01" MAX="2018-12-31">
+	<BR>
+	<BR>
+	<label>CHOOSE A TIME FOR AN APPOINTMENT:</label>
+	<input type="DATETIME-LOCAL" name="DATE" value="2018-07-22" MIN="2018-01-01-07T00:00" MAX="2018-12-31-14T00:30"><br><br>
+	<label FOR="file">CHOOSE THE PROFILE PICTURE:</label>
+	<input type="FILE" name=" FILE" accept="image/png,image/jpeg,image/*,.pdf,.txt"><br><br>
+	<!--accept means restriction to file type-->
+	<label> image</label>
+	<input type="image" name="image" src="chetta.png" alt="image not found"><br>
+	<br>
+	<label for="week"> week:</label>
+	<input type="week" name="week"><br><br>
+	<label for="gender">SELECT WHICH GENDER YOU ARE:</label><br>
+	<input type="radio" name="gender" id="gender" value="male">
+	<label for="male">male</label><br>
+	<input type="radio" name="gender" id="gender" value="female">
+	<label for="female">female</label><br>
+	<input type="radio" name="gender" id="gender" value="female">
+	<label for="other">other</label><br>
+	<BR>
+	<LABLE for="phone">ENTER YOU PHONE NUMBER:</LABLE>
+	<INPUT TYPE="TEL" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+	<small>format 123-456-7890</small>
+	<br><br>
+	<label for="APPT">  CHOOSE A TIME FOR MEETING:</label>
+	<input type="TIME" name="APPT" min="09:00" max="18:00" required >
+	<br><br><br>
+	<label>ENTER THE HTTPS://URL:</label>
+	<input type="URL" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" minlength="10" maxlength="80" required>
+	<br><br>
+	<br>
+	<label>SEARCH THE SITE:</label>
+	<INPUT TYPE="SEARCH" ID="SITE-SEARCH" NAME="q">
+	<button> SEARCH</button>
+	<BR><BR><BR>
+	<P> AUDIO SETTING:</P>
+	<DIV>
+		<input type="RANGE" name="VOLUMME" min="0" max="11">
+		<label>VOLUME</label>
+	</DIV>
+	<BR><BR>
+	<DIV>
+		<INPUT TYPE="RANGE" ID="COWBELL"MIN="0" MAX="100" value="90" STEP="25">
+		<label>COWBELL</label>
+	</DIV>
+	<BR><BR><BR>
+	<LABEL>NUMBER OF TENTACLES (10-100)</LABEL>
+	<INPUT TYPE="NUMBER" id="TENTACLES" NAME="TENTACLES" STEP="5"min="10" MAX="100">
+	<BR><BR><BR>
+	<H2> SELECT ANT COURSE</H2>
+	<select>
+		<option> PYTHON</option>
+		<option> JAVA</option>
+		<option> DJANGO</option>
+		<option> UI/UX</option>
+		<option> FULLSTACK</option>
+	</select>
+</fieldset>
+</body>
+</HTML>
