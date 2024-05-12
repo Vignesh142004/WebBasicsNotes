@@ -1,0 +1,7 @@
+1)Variable:
+    Rule:
+      1- Identifier sholud be must start with letter or underscore or doller symbol
+      2- Identifier sholud do not strart with number ,number are allowed but 
+      second letter onward
+      3- keyword not allowed
+      4- 

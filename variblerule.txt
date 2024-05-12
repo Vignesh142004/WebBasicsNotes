@@ -1,0 +1,5 @@
+name can contain letter,digit,underscore and dollar sign.
+name must begin with a letter
+name can al;so begin wiyh $ and _
+name are case sensitive
+RESERVED WORDS

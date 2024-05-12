@@ -1,0 +1,14 @@
+1)Innerhtml:
+   It will print the output based on Id
+          document.getElementById("id")
+2)document.wite:
+
+    It will display  the output without id
+
+3)window.alert("text"):
+
+    Alert box will be appered with the given text
+
+4)console.log("text"):
+    
+    press F12--console

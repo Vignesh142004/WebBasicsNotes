@@ -1,0 +1,7 @@
+1)Inline
+    within the tag
+2)Internal
+     <script> tag within head section
+3)External
+      external file with extension .js and linking with src 
+     

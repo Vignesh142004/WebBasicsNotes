@@ -1,0 +1,12 @@
+DATA TYPES
+  
+
+NUMBER  -- number,decimal
+
+STRING  -- data enclosed with single/double quotes
+
+BOOLEAN -- true/false
+
+OBJECT  --  array,name:value,null
+
+UNDEFINED--  variable is declared but not intialized

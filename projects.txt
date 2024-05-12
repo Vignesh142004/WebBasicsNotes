@@ -1,0 +1,45 @@
+void setup()
+{
+  pinMode(13,OUTPUT);
+  pinMode(7,INPUT);
+  pinMode(8,OUTPUT);
+  Serial.begin(9600);
+}
+void loop()
+{
+  int pirvalue=digitalRead(7);
+  int tempvalue=analogRead(A0); 
+
+ if(pirvalue==1)
+ { 
+  digitalWrite(13,1);
+
+  if(tempvalue>166)
+  {
+    digitalWrite(8,1); 
+   }
+  else
+  {
+    digitalWrite(8,0);
+  }
+     }
+   if(pirvalue==1)
+     {
+   
+  digitalWrite(13,1);
+   }
+       
+  else
+  {
+    digitalWrite(13,0);
+     digitalWrite(8,0);
+  }
+  delay(100);
+   }
+    
+ 
+  
+
+  
+  
+  
